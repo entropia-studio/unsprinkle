@@ -10,9 +10,12 @@ const Hero = () => {
       <picture>
         <source type='image/avif' srcSet={srcsetAvi} />
         <source type='image/jpg' srcSet={srcsetJpg} />
-        <HeroImage src='/images/hero-img.jpg' />
+        <HeroImage
+          src='/images/hero-img.jpg'
+          alt='An example of the photos distributed through this site (cat on black background)'
+        />
       </picture>
-      <Swoop src='/swoop.svg' />
+      <Swoop src='/swoop.svg' alt='' />
     </Wrapper>
   );
 };

@@ -20,7 +20,7 @@ const PhotoGridItem = ({ id, src, alt, tags }) => {
         <picture>
           <source type='image/avif' srcSet={buildSrcsetAvi(src)} />
           <source type='image/jpeg' srcSet={buildSrcsetJpg(src)} />
-          <Image src={src} />
+          <Image src={src} alt={alt} />
         </picture>
       </Anchor>
       <Tags>
